@@ -1,8 +1,8 @@
 using NUnit.Framework;
 
-namespace App.Test
+namespace App.Tests
 {
-    public class Tests
+    public class AutchServiceTest
     {
         [SetUp]
         public void Setup()
@@ -12,7 +12,11 @@ namespace App.Test
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            //arrange
+
+            //act
+
+            //assert
         }
     }
 }
