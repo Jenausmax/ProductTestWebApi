@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Product.Domain.Interfaces
 {
-    interface IAutchService
+    public interface IAutchService
     {
+        bool Login(string lastName);
     }
 }

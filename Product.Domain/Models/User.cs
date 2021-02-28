@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Product.Domain.Models
 {
-    class User
+    public class User
     {
+        public int UserId { get; set; }
+        public string LastName { get; set; }
+        public string Role { get; set; }
     }
 }
