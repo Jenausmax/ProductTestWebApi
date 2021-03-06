@@ -10,6 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using Product.DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 namespace Product.WebApi
 {
@@ -25,7 +29,12 @@ namespace Product.WebApi
         
         public void ConfigureServices(IServiceCollection services)
         {
+            var connection = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<ProductDBContext>(opt => opt.UseSqlServer(connection));
+
+
             services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
         }
 
         
