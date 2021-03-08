@@ -9,6 +9,6 @@ namespace Product.Domain.Interfaces
     {
         ICollection<Item> GetItems { get; }
 
-        bool Save();
+        bool Save(Item item);
     }
 }

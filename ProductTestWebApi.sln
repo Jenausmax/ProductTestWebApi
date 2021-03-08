@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.WebApi", "ProductTestWebApi\Product.WebApi.csproj", "{0DF982D0-6F46-41B0-8114-46DFDC7BD65B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.WebApi", "ProductTestWebApi\Product.WebApi.csproj", "{0DF982D0-6F46-41B0-8114-46DFDC7BD65B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{29F1FD11-8A6E-40C8-A0B4-BBC97596A952}"
 EndProject
@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C00CB3AB-C5A4-4160-830A-7B758E79C9CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Tests", "NUnitTestProject1\App.Tests.csproj", "{9D79A4A4-7DAA-43AA-B107-D52AAA3E1374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Tests", "NUnitTestProject1\App.Tests.csproj", "{9D79A4A4-7DAA-43AA-B107-D52AAA3E1374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.Domain", "Product.Domain\Product.Domain.csproj", "{B7A0FAF3-B3E1-4027-986A-58761C2EB0CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.Domain", "Product.Domain\Product.Domain.csproj", "{B7A0FAF3-B3E1-4027-986A-58761C2EB0CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.DataAccess", "Product.DAL\Product.DataAccess.csproj", "{CC128E0C-0C55-45B1-8E4F-679A78391548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.DataAccess", "Product.DAL\Product.DataAccess.csproj", "{CC128E0C-0C55-45B1-8E4F-679A78391548}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{52CBC140-9D49-4074-8A97-40DAE7380230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Product.App", "Product.App\Product.App.csproj", "{161D1379-8157-4A66-8B27-7D776CF91B10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Product.App", "Product.App\Product.App.csproj", "{161D1379-8157-4A66-8B27-7D776CF91B10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

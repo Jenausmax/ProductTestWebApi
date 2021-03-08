@@ -10,7 +10,7 @@ namespace Product.DataAccess
 {
      public class ProductDBContext : DbContext
      {
-        public DbSet<Item> Products { get; set; }
+        public DbSet<Item> Items { get; set; }
         public DbSet<User> Users { get; set; }
 
         public ProductDBContext(DbContextOptions<ProductDBContext> option) : base(option)
