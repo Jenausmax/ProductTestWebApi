@@ -27,7 +27,7 @@ namespace Product.App.Services
 
         public List<Item> ReadItem()
         {
-            throw new NotImplementedException();
+            return _repository.GetItems.ToList();
         }
 
         public bool UpdateItem(Item item)

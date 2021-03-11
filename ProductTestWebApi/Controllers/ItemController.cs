@@ -16,11 +16,19 @@ namespace Product.WebApi.Controllers
         private readonly IItemCRUDService _service;
         public ItemController(IItemCRUDService service)
         {
-
+            _service = service;
         }
-        public ActionResult<List<Item>> GetItem()
+        
+        [HttpGet]
+        public ActionResult<IEnumerable<Item>> Get()
         {
-           return _service.ReadItem();
+           return _service.ReadItem().ToList();
         }
+
+        //[HttpGet]
+        //public string GetP()
+        //{
+        //    return "111";
+        //}
     }
 }

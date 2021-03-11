@@ -14,6 +14,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Product.DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Product.Domain.Interfaces;
+using Product.App.Services;
+using Product.DataAccess.FakeRepo;
 
 namespace Product.WebApi
 {
@@ -32,6 +35,9 @@ namespace Product.WebApi
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ProductDBContext>(opt => opt.UseSqlServer(connection));
 
+            services.AddTransient<IItemRepository, FakeRepository>();
+            services.AddTransient<IItemCRUDService, ItemCRUDService>();
+            
 
             services.AddControllers();
             services.AddControllers().AddNewtonsoftJson();
@@ -45,7 +51,7 @@ namespace Product.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
